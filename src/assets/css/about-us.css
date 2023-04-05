@@ -96,3 +96,48 @@ p,
     display: none;
   }
 }
+
+@media only screen and (max-width: 576px) {
+  .desc h1 {
+    font-size: 5px;
+  }
+  .desc .author-desination p {
+    font-size: 10px;
+  }
+}
+
+@media only screen and (max-width: 250px) {
+  .desc h1 {
+    font-size: 5px;
+  }
+  .desc .author-desination p {
+    font-size: 5px;
+  }
+  .author-img-container img {
+    width: 100%;
+  }
+
+  #root
+    > div
+    > div.ant-col.ant-col-24.desc.ant-col-lg-12.ant-col-xl-10.css-dev-only-do-not-override-1vtf12y {
+    padding: 2px;
+  }
+  .desc p {
+    margin: 0;
+    padding: 2px;
+  }
+  .about-author {
+    padding: 2px;
+  }
+  .author-desination {
+    text-align: right;
+  }
+  .desc h1,
+  h6 {
+    padding: 2px;
+    text-align: center;
+  }
+  .desc h1 {
+    font-size: 10px;
+  }
+}
