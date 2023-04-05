@@ -1,8 +1,12 @@
+import AboutUs from "../components/AboutUs";
+
 const HomeView = () => {
   return (
-    <div className="">
-      <h1>HOme</h1>
-    </div>
+    <>
+      <h1>Home</h1>
+
+      <AboutUs />
+    </>
   );
 };
 
