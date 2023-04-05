@@ -1,3 +1,3 @@
 export const API_URL = {
-  ABOUT_US: "about",
+  ABOUT_US: "home",
 };

@@ -1,8 +1,22 @@
+import AboutUs from "../components/AboutUs";
+
+import { useGetAboutUsAPI } from "../hooks/useGetAboutUsAPI";
 const HomeView = () => {
+  const { data: aboutData, isLoading } = useGetAboutUsAPI();
+
+  if (isLoading)
+    return (
+      <>
+        <p>...Loading</p>
+      </>
+    );
+
   return (
-    <div className="">
-      <h1>HOme</h1>
-    </div>
+    <>
+      <h1>Home</h1>
+
+      <AboutUs aboutData={aboutData} />
+    </>
   );
 };
 
