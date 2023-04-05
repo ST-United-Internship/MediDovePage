@@ -125,12 +125,14 @@ p,
   .desc p {
     margin: 0;
     padding: 2px;
+    text-align: center;
   }
   .about-author {
     padding: 2px;
+    text-align: center;
   }
   .author-desination {
-    text-align: right;
+    text-align: center;
   }
   .desc h1,
   h6 {
@@ -139,5 +141,6 @@ p,
   }
   .desc h1 {
     font-size: 10px;
+    text-align: center;
   }
 }
