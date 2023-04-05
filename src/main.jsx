@@ -9,10 +9,11 @@ const queryClient = new QueryClient();
 
 import axios from "axios";
 
-const BASE_URL = import.meta.env.VITE_BASE_URL;
+const baseURL = import.meta.env.VITE_BASE_URL;
 
-axios.defaults.baseURL = BASE_URL;
+axios.defaults.baseURL = baseURL;
 
+// axios.defaults.baseURL =
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <QueryClientProvider client={queryClient}>
