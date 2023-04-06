@@ -8,7 +8,7 @@ const Navbar = () => {
   const [open, setOpen] = useState(false);
   return (
     <>
-      <div className="container">
+      <div className="container nav-container">
         <Row className="bar-left" gutter={24}>
           <Col span={12} className="item-container-left">
             <div>

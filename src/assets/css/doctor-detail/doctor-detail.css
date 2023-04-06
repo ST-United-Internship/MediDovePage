@@ -16,3 +16,10 @@
 .doctor-detials-lan ul li {
   display: inline-block;
 }
+.more-service-container {
+  background-color: #fff !important;
+}
+
+doctor-services-detail-container {
+  background-color: #fff !important;
+}
