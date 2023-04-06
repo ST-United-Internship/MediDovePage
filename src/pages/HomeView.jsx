@@ -5,6 +5,7 @@ import { useGetAboutUsAPI } from "../hooks/useGetAboutUsAPI";
 import AboutMember from "../components/AboutMember";
 import { useGetAboutMemberApi } from "../hooks/useGetAboutMemberAPI";
 import HomeCampus from "../components/HomeCampus";
+import HomeConsultant from "../components/HomeConsultant";
 import FooterHome from "../components/FooterHome";
 
 const HomeView = () => {
@@ -24,6 +25,7 @@ const HomeView = () => {
       <AboutUs aboutData={aboutData} />
       <AboutMember aboutMemberData={aboutMemberData} />
       <HomeCampus />
+      <HomeConsultant />
       <FooterHome />
     </>
   );
