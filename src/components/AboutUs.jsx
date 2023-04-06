@@ -10,7 +10,6 @@ const AboutUs = ({ aboutData }) => {
             src="https://medi-dove.netlify.app/img/about/about-img.jpg"
             alt="image"
             className="doctor-img"
-            s
           />
           <img
             className="medical-icon"
