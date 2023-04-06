@@ -1,11 +1,12 @@
 import { Col, Row } from "antd";
 import "../assets/css/about-us.css";
+import "../assets/css/services/common-container.css";
 
 const AboutUs = ({ aboutData }) => {
   return (
-    <>
-      <Row justify="center" wrap={true} className="about-us-container">
-        <Col span={24} lg={8} xl={10} xxl={8} className="about-left">
+    <div className="container">
+      <Row justify="space-between" wrap={true} className="about-us-container">
+        <Col xs={24} lg={12} className="about-left">
           <img
             src="https://medi-dove.netlify.app/img/about/about-img.jpg"
             alt="image"
@@ -17,7 +18,7 @@ const AboutUs = ({ aboutData }) => {
           />
         </Col>
 
-        <Col span={24} lg={12} xl={10} xxl={8} className="desc">
+        <Col xs={24} lg={12} className="desc">
           <h6>About Us</h6>
           <h1>Short Story About MediDove Clinic.</h1>
           <p>{aboutData[0]["about-us"]}</p>
@@ -33,7 +34,7 @@ const AboutUs = ({ aboutData }) => {
           </div>
         </Col>
       </Row>
-    </>
+    </div>
   );
 };
 

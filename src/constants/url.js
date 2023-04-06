@@ -3,4 +3,5 @@ export const API_URL = {
   SERVICE: "service",
   ABOUT_MEMBER: "home",
   PRICE_PLAN: "our-plants",
+  MORE_SERVICES: "home",
 };

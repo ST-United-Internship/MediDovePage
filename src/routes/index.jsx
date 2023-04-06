@@ -3,6 +3,7 @@ import { createBrowserRouter } from "react-router-dom";
 import HomeView from "../pages/HomeView";
 import DepartmentView from "../pages/DepartmentView";
 import DoctorView from "../pages/DoctorView";
+import ServiceView from "../pages/ServiceView";
 
 const router = createBrowserRouter([
   {
@@ -16,6 +17,10 @@ const router = createBrowserRouter([
   {
     path: "/doctor",
     element: <DoctorView />,
+  },
+  {
+    path: "services",
+    element: <ServiceView />,
   },
 ]);
 
