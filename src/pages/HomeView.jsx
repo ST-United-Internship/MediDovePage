@@ -7,6 +7,8 @@ import { useGetAboutMemberApi } from "../hooks/useGetAboutMemberAPI";
 import HomeCampus from "../components/HomeCampus";
 import { useGetPricePlan } from "../hooks/useGetPricePlan";
 import PricePlan from "../components/PricePlan";
+import HomeConsultant from "../components/HomeConsultant";
+import FooterHome from "../components/FooterHome";
 
 const HomeView = () => {
   const { data: aboutData, isLoading: isLoadingAboutUs } = useGetAboutUsAPI();
@@ -28,6 +30,8 @@ const HomeView = () => {
       <AboutMember aboutMemberData={aboutMemberData} />
       <HomeCampus />
       <PricePlan plans={pricePlans} />
+      <HomeConsultant />
+      <FooterHome />
     </>
   );
 };
