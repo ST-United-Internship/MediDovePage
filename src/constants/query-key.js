@@ -1,4 +1,5 @@
 export const QUERY_KEY = {
   ABOUT_US: "ABOUT_US",
   SERVICE: "SERVICE",
+  ABOUT_MEMBER: "ABOUT_MEMBER",
 };

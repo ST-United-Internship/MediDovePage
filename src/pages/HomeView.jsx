@@ -2,10 +2,14 @@ import AboutUs from "../components/AboutUs";
 import SlideIntro from "../components/SlideIntro";
 
 import { useGetAboutUsAPI } from "../hooks/useGetAboutUsAPI";
-const HomeView = () => {
-  const { data: aboutData, isLoading } = useGetAboutUsAPI();
+import AboutMember from "../components/AboutMember";
+import { useGetAboutMemberApi } from "../hooks/useGetAboutMemberAPI";
 
-  if (isLoading)
+const HomeView = () => {
+  const { data: aboutData, isLoading: isLoadingAboutUs } = useGetAboutUsAPI();
+  const { data: aboutMemberData, isLoading: isLoadingMember } =
+    useGetAboutMemberApi();
+  if (isLoadingAboutUs || isLoadingMember)
     return (
       <>
         <p>...Loading</p>
@@ -16,6 +20,7 @@ const HomeView = () => {
     <>
       <SlideIntro />
       <AboutUs aboutData={aboutData} />
+      <AboutMember aboutMemberData={aboutMemberData} />
     </>
   );
 };
