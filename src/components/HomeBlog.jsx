@@ -40,8 +40,17 @@ const HomeBlog = ({ newsData }) => {
           </div>
         </Col>
       </Row>
-      <Row gutter={24}>
-        <Col md={24} xl={16} style={{ display: "flex", gap: "24px" }}>
+      <Row
+        gutter={24}
+        style={{ marginTop: "5rem" }}
+        className="row-latest-news"
+      >
+        <Col
+          md={24}
+          xl={16}
+          style={{ display: "flex", gap: "24px" }}
+          className="col-latest-news"
+        >
           {newsData[0]["news"].map((item, index) => (
             <div className="latest-news-box" key={index}>
               <div className="latest-news-thumb">

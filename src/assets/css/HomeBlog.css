@@ -285,11 +285,22 @@
   .make-call-btn {
     display: none;
   }
+
+  .row-latest-news {
+    margin-top: 0 !important;
+  }
 }
 
 @media (min-width: 768px) {
   .container > div {
     max-width: 720px;
+  }
+}
+
+@media (max-width: 768px) {
+  .col-latest-news {
+    display: flex;
+    flex-direction: column;
   }
 }
 
