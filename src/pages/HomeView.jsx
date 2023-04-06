@@ -1,4 +1,5 @@
 import AboutUs from "../components/AboutUs";
+import SlideIntro from "../components/SlideIntro";
 
 import { useGetAboutUsAPI } from "../hooks/useGetAboutUsAPI";
 const HomeView = () => {
@@ -13,8 +14,7 @@ const HomeView = () => {
 
   return (
     <>
-      <h1>Home</h1>
-
+      <SlideIntro />
       <AboutUs aboutData={aboutData} />
     </>
   );
