@@ -53,6 +53,8 @@ const SlideIntro = () => {
               <div className="slider-text-container">
                 <p
                   data-aos="fade-up"
+                  data-aos-delay="50"
+                  data-aos-duration="1000"
                   data-aos-easing="ease-in-out"
                   className="first-line"
                 >
@@ -60,12 +62,20 @@ const SlideIntro = () => {
                 </p>
                 <p
                   data-aos="fade-up"
+                  data-aos-delay="50"
+                  data-aos-duration="1000"
                   data-aos-easing="ease-in-out"
                   className="second-line"
                 >
                   Best Care & Better Doctor.
                 </p>
-                <p data-aos="fade-up" className="third-line">
+                <p
+                  data-aos="fade-up"
+                  data-aos-delay="50"
+                  data-aos-duration="1000"
+                  data-aos-easing="ease-in-out"
+                  className="third-line"
+                >
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
                   do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                 </p>
@@ -97,11 +107,19 @@ const SlideIntro = () => {
             <div className="slider-item">
               <img src="https://medi-dove.netlify.app/static/media/slider-bg-1.a5b879494592cab4771e.jpg" />
               <div className="slider-text-container">
-                <p data-aos="fade-up" className="first-line">
+                <p
+                  data-aos="fade-up"
+                  data-aos-delay="50"
+                  data-aos-duration="1000"
+                  data-aos-easing="ease-in-out"
+                  className="first-line"
+                >
                   We are for your care
                 </p>
                 <p
                   data-aos="fade-up"
+                  data-aos-delay="50"
+                  data-aos-duration="1000"
                   data-aos-easing="ease-in-out"
                   className="second-line"
                 >
@@ -109,6 +127,8 @@ const SlideIntro = () => {
                 </p>
                 <p
                   data-aos="fade-up"
+                  data-aos-delay="50"
+                  data-aos-duration="1000"
                   data-aos-easing="ease-in-out"
                   className="third-line"
                 >
@@ -152,8 +172,6 @@ const SlideIntro = () => {
                 />
               </div>
               <iframe
-                width="900"
-                height="507"
                 src="https://www.youtube.com/embed/oU_GUAWz52w"
                 title="DevPlus"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"

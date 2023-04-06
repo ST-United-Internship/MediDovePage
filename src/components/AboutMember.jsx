@@ -7,7 +7,7 @@ const AboutMember = ({ aboutMemberData }) => {
       <div className="team-area">
         <div className="container-member">
           <Row justify={"center"}>
-            <Col span={10} className="text-container">
+            <Col xs={24} lg={10} xxl={8} className="text-container">
               <div className="container-tittle">
                 <div className="icon-img">
                   <img src="https://medi-dove.netlify.app/img/section/section-back-icon.png" />
@@ -18,11 +18,10 @@ const AboutMember = ({ aboutMemberData }) => {
                 </div>
                 <div className="text-line">
                   <img src="http://medi-dove.netlify.app/img/shape/section-title-line.png" />
-                  .
                 </div>
               </div>
             </Col>
-            <Col span={10} className="button-text">
+            <Col span={10} lg={10} xxl={8} className="button-text">
               <div className="button-icon">
                 <div className="button-primary">
                   <span>+</span>
@@ -32,9 +31,16 @@ const AboutMember = ({ aboutMemberData }) => {
             </Col>
           </Row>
 
-          <Row justify="center">
-            {aboutMemberData[0]["our-team"].map((item) => (
-              <Col span={7} className="button-container">
+          <Row justify="center" wrap={true}>
+            {aboutMemberData[0]["our-team"].map((item, index) => (
+              <Col
+                key={index}
+                xs={24}
+                sm={24}
+                md={12}
+                lg={7}
+                className="button-container"
+              >
                 <div className="button-tittle">
                   <div className="themb-img">
                     <img src={item.img} />

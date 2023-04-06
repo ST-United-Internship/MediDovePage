@@ -160,6 +160,14 @@
 .ant-collapse-header {
   padding: 20px 12px !important;
 }
+.show-video > div:nth-child(1) {
+  width: 100%;
+  text-align: center;
+}
+.show-video iframe {
+  width: 80%;
+  height: 500px;
+}
 
 @media screen and (max-width: 1120px) {
   .slider-text-container {
@@ -169,9 +177,9 @@
 }
 
 @media screen and (max-width: 768px) {
-  .slider-text-container {
+  /* .slider-text-container {
     width: 100%;
-  }
+  } */
 
   .slider-text-container .first-line {
     text-align: center;
@@ -226,5 +234,9 @@
     background-color: black;
     border-radius: 50%;
     border: none;
+  }
+  .show-video iframe {
+    width: 100%;
+    height: 300px;
   }
 }
