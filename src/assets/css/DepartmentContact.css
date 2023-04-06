@@ -67,6 +67,7 @@
   font-family: Poppins, sans-serif;
   margin-top: 0;
   font-weight: 600;
+  padding: 0;
 }
 
 .section-text > p {
@@ -78,6 +79,7 @@
   margin-bottom: 15px;
   margin-top: 0;
   font-family: Rubik, sans-serif;
+  padding: 0;
 }
 
 .section-button {
@@ -197,6 +199,7 @@
   color: #647589;
   font-size: 14px;
   font-weight: 400;
+  outline: none;
 }
 
 .caculate-box > a {
