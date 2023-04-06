@@ -11,7 +11,6 @@ const DepartmentView = () => {
     );
   return (
     <div>
-      Department
       <DepartmentContact serviceData={serviceData} />
     </div>
   );

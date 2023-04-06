@@ -6,6 +6,7 @@ import AboutMember from "../components/AboutMember";
 import { useGetAboutMemberApi } from "../hooks/useGetAboutMemberAPI";
 import HomeCampus from "../components/HomeCampus";
 import HomeConsultant from "../components/HomeConsultant";
+import FooterHome from "../components/FooterHome";
 
 const HomeView = () => {
   const { data: aboutData, isLoading: isLoadingAboutUs } = useGetAboutUsAPI();
@@ -25,6 +26,7 @@ const HomeView = () => {
       <AboutMember aboutMemberData={aboutMemberData} />
       <HomeCampus />
       <HomeConsultant />
+      <FooterHome />
     </>
   );
 };
