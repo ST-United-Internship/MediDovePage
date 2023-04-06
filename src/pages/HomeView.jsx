@@ -1,16 +1,20 @@
 import AboutUs from "../components/AboutUs";
+import SlideIntro from "../components/SlideIntro";
 
 import { useGetAboutUsAPI } from "../hooks/useGetAboutUsAPI";
-
+import AboutMember from "../components/AboutMember";
+import { useGetAboutMemberApi } from "../hooks/useGetAboutMemberAPI";
+import HomeCampus from "../components/HomeCampus";
+import { useGetPricePlan } from "../hooks/useGetPricePlan";
 import PricePlan from "../components/PricePlan";
 
-import { useGetPricePlan } from "../hooks/useGetPricePlan";
-
 const HomeView = () => {
-  const { data: aboutData, isLoading } = useGetAboutUsAPI();
+  const { data: aboutData, isLoading: isLoadingAboutUs } = useGetAboutUsAPI();
+  const { data: aboutMemberData, isLoading: isLoadingMember } =
+    useGetAboutMemberApi();
   const { data: pricePlans, isLoading: loadPricePlan } = useGetPricePlan();
-
-  if (isLoading || loadPricePlan)
+  
+  if (isLoadingAboutUs || isLoadingMember || loadPricePlan)
     return (
       <>
         <p>...Loading</p>
@@ -19,10 +23,10 @@ const HomeView = () => {
 
   return (
     <>
-      <h1>Home</h1>
-
+      <SlideIntro />
       <AboutUs aboutData={aboutData} />
-
+      <AboutMember aboutMemberData={aboutMemberData} />
+      <HomeCampus />
       <PricePlan plans={pricePlans} />
     </>
   );
