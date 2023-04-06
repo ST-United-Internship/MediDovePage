@@ -47,12 +47,10 @@ const Navbar = () => {
             <div className="header__menu f-right">
               <div className="mobile-menu">
                 <a href="/">Home +</a>
-
-                <a href="/services-details">Department +</a>
-
+                <a href="/department">Department +</a>
                 <a href="/doctor">Doctors +</a>
                 <a href="/doctors-details">Doctors Details +</a>
-                <a href="/department">Department +</a>
+                <a href="/services-details">Services +</a>
               </div>
             </div>
           </Col>
