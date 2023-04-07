@@ -1,8 +1,11 @@
 import { PhoneFilled } from "@ant-design/icons";
 import { Row, Col } from "antd";
 import "../assets/css/DepartmentContact.css";
+import { useNavigate } from "react-router-dom";
 
 const DepartmentContact = ({ serviceData }) => {
+  const navigate = useNavigate();
+
   return (
     <section className="caculate-area container">
       <Row className="calculate_wrapper" gutter={24}>
@@ -15,7 +18,7 @@ const DepartmentContact = ({ serviceData }) => {
             </div>
           </div>
           <div className="section-button-appointment">
-            <a href="" className="btn-icon">
+            <a onClick={() => navigate("/")} className="btn-icon">
               <span>+</span>
               Make Appointment
             </a>

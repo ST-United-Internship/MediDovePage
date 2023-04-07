@@ -239,6 +239,15 @@ const MoreServices = ({ moreServiceData }) => {
                 <div className="col-xl-12">
                   <div className="contact-input contact-icon contact-hourglass">
                     <select
+                      style={{
+                        paddingLeft: "40px",
+                        border: "2px solid #eee7ff",
+                        color: "#647589",
+                        fontSize: "14px",
+                        height: "70px",
+                        width: "100%",
+                        marginBottom: "15px",
+                      }}
                       className="form-select select_style"
                       aria-label="Default select example"
                     >
@@ -250,13 +259,20 @@ const MoreServices = ({ moreServiceData }) => {
                   </div>
                 </div>
               </div>
+              <div
+                className="button-icon"
+                style={{
+                  position: "absolute",
+                  paddingTop: "20px",
+                  paddingLeft: "40px",
+                }}
+              >
+                <div className="button-primary">
+                  <span>+</span>
+                  <a href="#">Make Appointment</a>
+                </div>
+              </div>
             </form>
-
-            <div className="set-form-btn">
-              <a href="#" className="primary_btn btn-icon">
-                <span>+</span>Request for call
-              </a>
-            </div>
           </div>
 
           <div className="banner-widget">

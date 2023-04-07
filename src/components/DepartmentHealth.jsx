@@ -1,7 +1,10 @@
 import { Col, Row } from "antd";
 import "../assets/css/DepartmentHealth.css";
+import { useNavigate } from "react-router-dom";
 
 const DepartmentHealth = ({ Department }) => {
+  const navigate = useNavigate();
+
   return (
     <div className="department-health container">
       <Row gutter={[16, 16]} className="icon-wrap">
@@ -42,14 +45,14 @@ const DepartmentHealth = ({ Department }) => {
               span={24}
               md={12}
               xl={8}
-              className="item-container"
+              className="item-container-new"
               key={index}
             >
               <div className="list-item">
                 <img src={items.img} />
                 <h2>{items.title}</h2>
                 <p>{items.des}</p>
-                <a>Read more</a>
+                <a onClick={() => navigate("/services-details")}>Read more</a>
               </div>
             </Col>
           );

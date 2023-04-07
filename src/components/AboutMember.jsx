@@ -1,7 +1,10 @@
 import { Col, Row } from "antd";
 import "../assets/AboutMember.css";
+import { useNavigate } from "react-router-dom";
 
 const AboutMember = ({ aboutMemberData }) => {
+  const navigate = useNavigate();
+
   return (
     <div className="team-area container">
       <Row justify={"center"}>
@@ -23,7 +26,7 @@ const AboutMember = ({ aboutMemberData }) => {
           <div className="button-icon">
             <div className="button-primary">
               <span>+</span>
-              <a>Make Appointment</a>
+              <a href="#">Make Appointment</a>
             </div>
           </div>
         </Col>
@@ -40,7 +43,12 @@ const AboutMember = ({ aboutMemberData }) => {
           >
             <div className="themb-img">
               <img src={item.img} />
-              <a className="themb-link">+</a>
+              <a
+                onClick={() => navigate("/doctors-details")}
+                className="themb-link"
+              >
+                +
+              </a>
             </div>
             <div className="text-content">
               <h3>{item.name}</h3>

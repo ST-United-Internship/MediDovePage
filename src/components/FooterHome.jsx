@@ -24,7 +24,7 @@ const FooterHome = () => {
                 </div>
               </div>
               <div className="footer-logo">
-                <a href="">
+                <a href="#">
                   <img
                     src="https://medi-dove.netlify.app/img/logo/footer-logo.png"
                     alt=""
@@ -71,19 +71,19 @@ const FooterHome = () => {
                     <a href="/services-details">Surgery and Radiology</a>
                   </li>
                   <li>
-                    <a href="">Family Medicine</a>
+                    <a href="#">Family Medicine</a>
                   </li>
                   <li>
-                    <a href="">Women's Health</a>
+                    <a href="#">Women's Health</a>
                   </li>
                   <li>
-                    <a href="">Optician</a>
+                    <a href="#">Optician</a>
                   </li>
                   <li>
-                    <a href="">Pediatrics</a>
+                    <a href="#">Pediatrics</a>
                   </li>
                   <li>
-                    <a href="">Dermatology</a>
+                    <a href="#">Dermatology</a>
                   </li>
                 </ul>
               </div>

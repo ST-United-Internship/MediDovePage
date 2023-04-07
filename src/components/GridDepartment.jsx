@@ -1,5 +1,6 @@
 import { Col, Row } from "antd";
 import "../assets/css/GridDepartment.css";
+import { useNavigate } from "react-router-dom";
 const items = [
   {
     img: "https://medi-dove.netlify.app/img/services/service1.png",
@@ -33,6 +34,8 @@ const items = [
   },
 ];
 const GridDepartment = () => {
+  const navigate = useNavigate();
+
   return (
     <div>
       <>
@@ -66,7 +69,9 @@ const GridDepartment = () => {
                       <img src={items.img} />
                       <h2>{items.title}</h2>
                       <div className="des-title">{items.des}</div>
-                      <a>Read more</a>
+                      <a onClick={() => navigate("/services-details")}>
+                        Read more
+                      </a>
                     </div>
                   </Col>
                 );
