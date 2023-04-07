@@ -19,7 +19,7 @@ const router = createBrowserRouter([
     element: <DoctorView />,
   },
   {
-    path: "services",
+    path: "/services-details",
     element: <ServiceView />,
   },
 ]);
