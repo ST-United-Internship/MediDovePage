@@ -15,7 +15,7 @@ const HomeView = () => {
   const { data: aboutMemberData, isLoading: isLoadingMember } =
     useGetAboutMemberApi();
   const { data: pricePlans, isLoading: loadPricePlan } = useGetPricePlan();
-  
+
   if (isLoadingAboutUs || isLoadingMember || loadPricePlan)
     return (
       <>
