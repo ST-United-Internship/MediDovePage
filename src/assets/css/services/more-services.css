@@ -11,6 +11,10 @@
   width: 100%;
 }
 
+.more-service-container .more-service-img {
+  width: 110px;
+}
+
 .more-service-container .item-left img {
   max-width: 100%;
 }

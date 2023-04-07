@@ -198,7 +198,7 @@ const MoreServices = ({ moreServiceData }) => {
             <h1 className="widget-title">More Services</h1>
             {moreServiceData[0]["departments"].map((item, index) => (
               <div key={index} className="item-menu">
-                <img src={item.img} />
+                <img className="more-service-img" src={item.img} />
                 <p>{item.title}</p>
               </div>
             ))}
