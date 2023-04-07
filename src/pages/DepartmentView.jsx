@@ -6,6 +6,7 @@ import { useGetHealthAPI } from "../hooks/useGetHealthAPI";
 
 import HireEmployer from "../components/HireEmployer";
 import Navbar from "../components/Navbar";
+import FooterTotal from "../components/FooterTotal";
 
 const DepartmentView = () => {
   const { data: serviceData, isLoading: loadService } = useGetServiceAPI();
@@ -24,6 +25,7 @@ const DepartmentView = () => {
       <DepartmentHealth Department={heathData} />
       <DepartmentContact serviceData={serviceData} />
       <HireEmployer />
+      <FooterTotal />
     </div>
   );
 };
