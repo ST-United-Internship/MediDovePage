@@ -2,6 +2,7 @@ import AboutMember from "../components/AboutMember";
 import DoctorInfor from "../components/DoctorInfor";
 import FooterTotal from "../components/FooterTotal";
 import HomeCampus from "../components/HomeCampus";
+import Navbar from "../components/Navbar";
 import OurServices from "../components/Services/OurServices";
 import { useGetAboutMemberApi } from "../hooks/useGetAboutMemberAPI";
 const DoctorView = () => {
@@ -22,6 +23,7 @@ const DoctorView = () => {
 
   return (
     <div>
+      <Navbar />
       <OurServices content={content} />
       <AboutMember aboutMemberData={aboutMemberData} />
       <HomeCampus />

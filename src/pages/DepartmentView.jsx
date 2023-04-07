@@ -5,6 +5,7 @@ import DepartmentHealth from "../components/DepartmentHealth";
 import { useGetHealthAPI } from "../hooks/useGetHealthAPI";
 
 import HireEmployer from "../components/HireEmployer";
+import Navbar from "../components/Navbar";
 
 const DepartmentView = () => {
   const { data: serviceData, isLoading: loadService } = useGetServiceAPI();
@@ -19,6 +20,7 @@ const DepartmentView = () => {
 
   return (
     <div>
+      <Navbar />
       <DepartmentHealth Department={heathData} />
       <DepartmentContact serviceData={serviceData} />
       <HireEmployer />

@@ -1,5 +1,6 @@
 import AboutUs from "../components/AboutUs";
 import SlideIntro from "../components/SlideIntro";
+import Navbar from "../components/Navbar";
 
 import { useGetAboutUsAPI } from "../hooks/useGetAboutUsAPI";
 import AboutMember from "../components/AboutMember";
@@ -28,6 +29,7 @@ const HomeView = () => {
 
   return (
     <>
+      <Navbar />
       <SlideIntro />
       <AboutUs aboutData={aboutData} />
       <AboutMember aboutMemberData={aboutMemberData} />
