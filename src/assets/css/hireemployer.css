@@ -3,6 +3,8 @@
 .hire-employer-container {
   padding-bottom: 120px;
   padding-top: 120px;
+  padding-left: 12px;
+  padding-right: 12px;
   max-width: 1200px;
   margin: 0 auto;
 }

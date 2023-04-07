@@ -69,16 +69,6 @@
   padding-right: 5px;
 }
 
-/* .item-left .recharts-wrapper {
-  width: 100% !important;
-}
-
-.recharts-wrapper .recharts-surface {
-  width: 100% !important;
-} */
-
-/* .single-download-inner */
-
 .testi-box {
   text-align: center !important;
 }
@@ -175,14 +165,14 @@
   transition: 0.4s;
 }
 
-.section-title {
+.service-care-container .section-title {
   position: relative;
   margin-bottom: 50px;
 }
-.section-text h5 {
+.service-care-container .section-text h5 {
   color: #8fb569;
 }
-.section-title h1 {
+.service-care-container .section-title h1 {
   line-height: 1.2;
   margin-bottom: 18px;
   font-size: 60px;
@@ -192,7 +182,7 @@
   font-weight: 600;
   line-height: 1.1;
 }
-.section-title img {
+.service-care-container .section-title img {
   max-width: 100%;
   transition: all 0.3s ease-out 0s;
 }

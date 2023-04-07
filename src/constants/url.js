@@ -5,4 +5,5 @@ export const API_URL = {
   PRICE_PLAN: "our-plants",
   MORE_SERVICES: "home",
   NEWS: "home",
+  DEPARTMENT_HEALTH: "departments",
 };
