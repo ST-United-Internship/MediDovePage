@@ -90,6 +90,12 @@ ul {
   color: #899dab;
   font-weight: 500;
 }
+
+.nav-link-react {
+  color: #899dab;
+  font-weight: 500;
+}
+
 .footer-home-title h3 {
   color: #fff;
   display: block;

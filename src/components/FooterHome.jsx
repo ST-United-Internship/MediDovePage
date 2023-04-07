@@ -6,6 +6,7 @@ import {
   SwitcherOutlined,
   FlagOutlined,
 } from "@ant-design/icons";
+
 const FooterHome = () => {
   return (
     <>
@@ -67,7 +68,7 @@ const FooterHome = () => {
               <div className="footer-home-menu">
                 <ul>
                   <li>
-                    <a href="">Surgery and Radiology</a>
+                    <a href="/services-details">Surgery and Radiology</a>
                   </li>
                   <li>
                     <a href="">Family Medicine</a>
@@ -103,7 +104,7 @@ const FooterHome = () => {
                   <a href="">Departments</a>
                 </li>
                 <li>
-                  <a href="">Our Doctors</a>
+                  <a href="/doctor">Our Doctors</a>
                 </li>
                 <li>
                   <a href="">News</a>

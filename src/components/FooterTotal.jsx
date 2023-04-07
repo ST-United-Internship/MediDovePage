@@ -6,6 +6,7 @@ import {
   FlagOutlined,
 } from "@ant-design/icons";
 import { Link } from "react-router-dom";
+
 const FooterTotal = () => {
   return (
     <>
@@ -53,22 +54,22 @@ const FooterTotal = () => {
               <div className="footer-total-menu">
                 <ul>
                   <li>
-                    <Link to="/">Surgery and Radiology</Link>
+                    <Link to="/services-details">Surgery and Radiology</Link>
                   </li>
                   <li>
-                    <Link to="/">Departments </Link>
+                    <Link to="/services-details">Departments </Link>
                   </li>
                   <li>
-                    <Link to="/">Family Medicine</Link>
+                    <Link to="/services-details">Family Medicine</Link>
                   </li>
                   <li>
                     <Link to="/doctor">Our Doctors</Link>
                   </li>
                   <li>
-                    <Link to="/">Women’s Health</Link>
+                    <Link to="/services-details">Women’s Health</Link>
                   </li>
                   <li>
-                    <Link to="/">News</Link>
+                    <Link to="/services-details">News</Link>
                   </li>
 
                   <li>
@@ -84,7 +85,7 @@ const FooterTotal = () => {
                     <Link to="/">Contact Us</Link>
                   </li>
                   <li>
-                    <Link to="/">Dermatology</Link>
+                    <Link to="/services-details">Dermatology</Link>
                   </li>
                   <li>
                     <Link to="/">Book An Appointment</Link>

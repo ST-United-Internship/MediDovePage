@@ -14,7 +14,7 @@ const DepartmentContact = ({ serviceData }) => {
               <p>{serviceData[0]["makeCall"].desc}</p>
             </div>
           </div>
-          <div className="section-button">
+          <div className="section-button-appointment">
             <a href="" className="btn-icon">
               <span>+</span>
               Make Appointment
