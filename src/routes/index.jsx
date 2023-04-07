@@ -5,6 +5,7 @@ import DepartmentView from "../pages/DepartmentView";
 import DoctorView from "../pages/DoctorView";
 import ServiceView from "../pages/ServiceView";
 import DoctorDetailView from "../pages/DoctorDetailView";
+import NotFound from "../pages/NotFound";
 
 const router = createBrowserRouter([
   {
@@ -23,6 +24,10 @@ const router = createBrowserRouter([
   {
     path: "/services-details",
     element: <ServiceView />,
+  },
+  {
+    path: "*",
+    element: <NotFound />,
   },
 ]);
 
