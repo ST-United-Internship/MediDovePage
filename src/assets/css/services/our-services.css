@@ -5,7 +5,7 @@
   background-image: url("https://medi-dove.netlify.app/static/media/page-bg.19c1fbc541073bd8ef07.jpg");
   padding: 200px 0 180px 0;
   background-repeat: no-repeat;
-  background-size: auto;
+  background-size: cover;
 }
 
 .right-item .menu-item {
