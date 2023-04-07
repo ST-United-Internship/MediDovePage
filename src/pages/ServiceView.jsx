@@ -1,4 +1,5 @@
 import FooterTotal from "../components/FooterTotal";
+import Navbar from "../components/Navbar";
 import MoreServices from "../components/Services/MoreServices";
 import OurServices from "../components/Services/OurServices";
 import { useGetMoreServiceApi } from "../hooks/useGetMoreServiceAPI";
@@ -15,6 +16,7 @@ const ServiceView = () => {
 
   return (
     <>
+      <Navbar />
       <OurServices content={content} />
       <MoreServices moreServiceData={moreServiceData} />
       <div style={{ marginBottom: "100px" }}></div>
