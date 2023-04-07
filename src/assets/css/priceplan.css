@@ -229,3 +229,9 @@
     font-size: 32px;
   }
 }
+
+@media only screen and (max-width: 350px) {
+  .price-plan-container .pricing-menu input:checked + label {
+    transform: scale(0.9);
+  }
+}
