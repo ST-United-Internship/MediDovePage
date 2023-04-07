@@ -12,6 +12,7 @@ import HomeConsultant from "../components/HomeConsultant";
 import FooterHome from "../components/FooterHome";
 import HomeBlog from "../components/HomeBlog";
 import { useGetNewAPI } from "../hooks/useGetNewAPI";
+import GridDepartment from "../components/GridDepartment";
 
 const HomeView = () => {
   const { data: aboutData, isLoading: isLoadingAboutUs } = useGetAboutUsAPI();
@@ -32,6 +33,7 @@ const HomeView = () => {
       <Navbar />
       <SlideIntro />
       <AboutUs aboutData={aboutData} />
+      <GridDepartment />
       <AboutMember aboutMemberData={aboutMemberData} />
       <HomeCampus />
       <PricePlan plans={pricePlans} />

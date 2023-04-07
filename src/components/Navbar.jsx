@@ -8,7 +8,7 @@ const Navbar = () => {
   const [open, setOpen] = useState(false);
   return (
     <>
-      <div className="container">
+      <div className="container nav-container">
         <Row className="bar-left" gutter={24}>
           <Col span={12} className="item-container-left">
             <div>
@@ -47,12 +47,10 @@ const Navbar = () => {
             <div className="header__menu f-right">
               <div className="mobile-menu">
                 <a href="/">Home +</a>
-
-                <a href="/services-details">Department +</a>
-
+                <a href="/department">Department +</a>
                 <a href="/doctor">Doctors +</a>
                 <a href="/doctors-details">Doctors Details +</a>
-                <a href="/department">Department +</a>
+                <a href="/services-details">Services +</a>
               </div>
             </div>
           </Col>

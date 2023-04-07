@@ -54,10 +54,8 @@
   justify-content: flex-end;
 }
 
-.header-top-right-btn {
-}
-.container {
-  background: #f3f6ff;
+.nav-container {
+  background-color: #f3f6ff;
 }
 
 @media (min-width: 576px) {

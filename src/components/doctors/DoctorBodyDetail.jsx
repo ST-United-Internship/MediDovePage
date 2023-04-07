@@ -11,7 +11,7 @@ import { CheckOutlined } from "@ant-design/icons";
 const DoctorBodyDetail = () => {
   return (
     <div
-      className="container more-service-container"
+      className="container more-service-container doctor-services-detail-container"
       style={{ marginBottom: "100px" }}
     >
       <Row wrap={true} justify={"space-between"}>

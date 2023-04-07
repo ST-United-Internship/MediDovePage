@@ -4,7 +4,7 @@ import "../assets/css/services/common-container.css";
 
 const AboutUs = ({ aboutData }) => {
   return (
-    <div className="container">
+    <div className="container about-us-container-fluild">
       <Row justify="space-between" wrap={true} className="about-us-container">
         <Col xs={24} lg={12} className="about-left">
           <img
