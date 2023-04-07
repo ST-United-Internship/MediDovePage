@@ -1,6 +1,7 @@
 import OurServices from "../components/Services/OurServices";
 import DoctorBodyDetail from "../components/doctors/DoctorBodyDetail";
 import FooterTotal from "../components/FooterTotal";
+import Navbar from "../components/Navbar";
 
 const DoctorDetailView = () => {
   const content = {
@@ -11,6 +12,7 @@ const DoctorDetailView = () => {
 
   return (
     <div>
+      <Navbar />
       <OurServices content={content} />
 
       <DoctorBodyDetail />

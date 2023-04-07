@@ -23,7 +23,7 @@ const Navbar = () => {
 
           <Col span={12} className="item-container-right">
             <div className="header-top-right-btn f-right">
-              <a className="primary_btn appoint-btn" href="/contact">
+              <a className="primary_btn appoint-btn custom-btn">
                 Make Appointment
               </a>
             </div>
@@ -48,9 +48,11 @@ const Navbar = () => {
               <div className="mobile-menu">
                 <a href="/">Home +</a>
 
-                <a href="/services">Department +</a>
+                <a href="/services-details">Department +</a>
 
-                <a href="/doctors">Doctors +</a>
+                <a href="/doctor">Doctors +</a>
+                <a href="/doctors-details">Doctors Details +</a>
+                <a href="/department">Department +</a>
               </div>
             </div>
           </Col>
