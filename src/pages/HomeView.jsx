@@ -9,14 +9,17 @@ import { useGetPricePlan } from "../hooks/useGetPricePlan";
 import PricePlan from "../components/PricePlan";
 import HomeConsultant from "../components/HomeConsultant";
 import FooterHome from "../components/FooterHome";
+import HomeBlog from "../components/HomeBlog";
+import { useGetNewAPI } from "../hooks/useGetNewAPI";
 
 const HomeView = () => {
   const { data: aboutData, isLoading: isLoadingAboutUs } = useGetAboutUsAPI();
   const { data: aboutMemberData, isLoading: isLoadingMember } =
     useGetAboutMemberApi();
+  const { data: newsData, isLoading: isLoadingNews } = useGetNewAPI();
   const { data: pricePlans, isLoading: loadPricePlan } = useGetPricePlan();
 
-  if (isLoadingAboutUs || isLoadingMember || loadPricePlan)
+  if (isLoadingAboutUs || isLoadingMember || loadPricePlan || isLoadingNews)
     return (
       <>
         <p>...Loading</p>
@@ -31,6 +34,7 @@ const HomeView = () => {
       <HomeCampus />
       <PricePlan plans={pricePlans} />
       <HomeConsultant />
+      <HomeBlog newsData={newsData} />
       <FooterHome />
     </>
   );

@@ -3,7 +3,6 @@ import { Row, Col } from "antd";
 import "../assets/css/DepartmentContact.css";
 
 const DepartmentContact = ({ serviceData }) => {
-  console.log("check:", serviceData);
   return (
     <section className="caculate-area">
       <div className="contact-container calculate_wrapper">

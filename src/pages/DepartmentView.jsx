@@ -1,10 +1,10 @@
 import DepartmentContact from "../components/DepartmentContact";
-import { useGetAboutUsAPI } from "../hooks/useGetServiceAPI";
+import { useGetServiceAPI } from "../hooks/useGetServiceAPI";
 
 import HireEmployer from "../components/HireEmployer";
 
 const DepartmentView = () => {
-  const { data: serviceData, isLoading: loadService } = useGetAboutUsAPI();
+  const { data: serviceData, isLoading: loadService } = useGetServiceAPI();
   if (loadService)
     return (
       <>
