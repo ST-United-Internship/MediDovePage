@@ -17,7 +17,22 @@ const MoreServices = ({ moreServiceData }) => {
             src="https://medi-dove.netlify.app/img/services/service-details-thumb1.jpg"
           />
 
-          {/* long text */}
+          <div className="container-title" style={{ marginTop: "10px" }}>
+            <div className="icon-img">
+              <img
+                style={{ marginTop: "45px" }}
+                src="https://medi-dove.netlify.app/img/section/section-back-icon.png"
+              />
+            </div>
+            <div className="text-title">
+              <h5>INTRODUCING MY SELF</h5>
+              <h1>There Is Nothing To Show Something.</h1>
+            </div>
+            <div className="text-line" style={{ paddingTop: "50px" }}>
+              <img src="http://medi-dove.netlify.app/img/shape/section-title-line.png" />
+            </div>
+          </div>
+
           <div className="long-text">
             <p>
               Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
